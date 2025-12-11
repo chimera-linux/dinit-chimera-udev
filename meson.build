@@ -13,7 +13,6 @@ project(
 )
 
 pfx = get_option('prefix')
-lexecdir = get_option('libexecdir')
 sbindir = get_option('sbindir')
 dlibdir = get_option('libdir') / 'dinit'
 tmpfdir = get_option('libdir') / 'tmpfiles.d'
@@ -22,7 +21,6 @@ earlydir = srvdir / 'early'
 
 cpp = meson.get_compiler('cpp')
 
-kmod_dep = dependency('libkmod')
 libudev_dep = dependency('libudev', required: true)
 dinitctl_dep = cpp.find_library('dinitctl', required: true)
 
