@@ -1,0 +1,5 @@
+option('devmon-socket',
+    type: 'string',
+    value: '/run/dinit-devmon.sock',
+    description: 'the device monitor socket path'
+)
